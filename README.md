@@ -1,4 +1,3 @@
-# pyspark-ddos-detection
 # PySpark RandomForest DDoS Detection
 ## Deskripsi
 
