@@ -1,0 +1,4 @@
+ubuntu-22.04
+spark-3.3.2
+hadoop-3.3.2
+datasheet_ddos
