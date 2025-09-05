@@ -16,3 +16,5 @@ Datasheet yang digunakan adalah datasheet publik yang didapatkan di kaggle.
 - Evaluasi akurasi
 
 ---
+# Results
+RandomForest accuracy 98% base model.
