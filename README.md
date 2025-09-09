@@ -17,4 +17,4 @@ Datasheet yang digunakan adalah datasheet publik yang didapatkan di kaggle.
 
 ---
 ## Results
-RandomForest accuracy 98% base model.
+RandomForest accuracy 92% base model.
