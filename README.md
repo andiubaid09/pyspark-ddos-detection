@@ -3,9 +3,9 @@
 
 Proyek ini merupakan implementasi **RandomForest menggunakan PySpark** untuk mendeteksi serangan **DDoS (Distributed Denial of Service)** pada jaringan.  
 Lingkungan proyek dijalankan di **virtual Linux dengan 3 VM Linux, 1 Master dan 2 Worker**, memanfaatkan kemampuan paralel PySpark untuk memproses dataset besar dengan efisien.
-Datasheet yang digunakan adalah datasheet publik yang didapatkan di kaggle.
+Datasheet yang digunakan adalah datasheet publik yang didapatkan di kaggle. Kemudian disimpan di hdfs lalu diambil untuk dikelola di notebooks.
 
-> ⚠️ Catatan: Model yang dilatih dalam notebook ini **tidak disimpan** sebagai file terpisah. Notebook berisi pipeline lengkap untuk pelatihan dan evaluasi. Untuk menggunakan model, jalankan ulang notebook dengan dataset yang tersedia.
+> ⚠️ Catatan: Model yang dilatih dalam notebook ini **tidak disimpan** sebagai file terpisah. Notebook berisi kode lengkap untuk pelatihan dan evaluasi. Untuk menggunakan model, jalankan ulang notebook dengan dataset yang tersedia.
 
 ---
 
@@ -17,4 +17,4 @@ Datasheet yang digunakan adalah datasheet publik yang didapatkan di kaggle.
 
 ---
 ## Results
-RandomForest accuracy 92% base model.
+RandomForest accuracy 91% dengan 100 pohon keputusan
