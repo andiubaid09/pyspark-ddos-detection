@@ -1,4 +1,5 @@
 from pyspark.ml.evaluation import MulticlassClassificationEvaluator
+from pyspark.mllib.evaluation import MulticlassMetrics
 
 prediksi = model.transform(test_data)
 print("Hasil prediksi pada data testing (5 baris teratas):")
@@ -12,7 +13,6 @@ akurasi = evaluator.evaluate(prediksi)
 print(f"Akurasi model:{akurasi}")
 
 #cm
-from pyspark.mllib.evaluation import MulticlassMetrics
 predictionAndLabels = prediksi.select(['prediction','label']).rdd.map(tuple)
 
 metrics = MulticlassMetrics(predictionAndLabels)
