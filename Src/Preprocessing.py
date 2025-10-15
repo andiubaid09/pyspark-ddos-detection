@@ -1,9 +1,9 @@
 from pyspark.sql.functions import col, sum, count, lit
+from pyspark.sql.functions import col, sum, when
+from pyspark.ml.feature import StringIndexer
 
 df.select([sum(col(c).isNull().cast("int")).alias(c) for c in df.columns]).show()
 missing_df = df.select([sum(col(c).isNull().cast("int")).alias(c) for c in df.columns])
-
-from pyspark.sql.functions import col, sum, when
 
 total_rows = df.count()
 print(f"Jumlah rows adalah : {total_rows}")
@@ -31,7 +31,6 @@ print(f"Jumlah baris awal: {df.count()}")
 print(f"Jumlah baris setelah di cleaning: {df_clean.count()}")
 
 # Menangani kolom kategorial
-from pyspark.ml.feature import StringIndexer
 
 Protocol_encoding = StringIndexer(inputCol="Protocol",outputCol="Protocol_encoding")
 df_clean = Protocol_encoding.fit(df_clean).transform(df_clean)
