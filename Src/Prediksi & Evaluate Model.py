@@ -5,7 +5,7 @@ prediksi = model.transform(test_data)
 print("Hasil prediksi pada data testing (5 baris teratas):")
 prediksi.select('label', 'prediction', 'probability').show(5, truncate=False)
 
-# Akurasi
+# Akurasii
 prediksi.select('label','prediction','probability')
 
 evaluator = MulticlassClassificationEvaluator(labelCol='label', predictionCol='prediction', metricName='accuracy')
